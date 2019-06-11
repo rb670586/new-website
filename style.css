@@ -287,7 +287,7 @@ li {
 	margin-bottom: 5rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-	grid-gap: 2.5rem;
+	grid-gap: 2rem;
 	text-align: center;
 }
 
@@ -306,6 +306,13 @@ li {
 
 }
 
+.grow {
+	transition: all .4s ease-in-out;
+}
+.skill .grow:hover {
+	transform:scale(1.3);
+}
+
 .icon-container {
 	width: 10rem;
 	height: 10rem;
@@ -316,17 +323,71 @@ li {
 	transform: rotate(45deg);
 }
 
-.grow {
-	transition: all .4s ease-in-out;
-}
-.skill .grow:hover {
-	transform:scale(1.3);
-}
 
 .icon-container-js {
 	width: 10rem;
 	height: 10rem;
 	background: url('images/jslogo.png') center;
+	background-size: contain;
+	margin-bottom: 4rem;
+	display: flex;
+}
+
+.icon-container-css {
+	width: 10rem;
+	height: 10rem;
+	background: url('images/csslogo.png') center;
+	background-size: contain;
+	margin-bottom: 4rem;
+	display: flex;
+}
+
+.icon-container-html {
+	width: 10rem;
+	height: 10rem;
+	background: url('images/htmllogo.png') center;
+	background-size: contain;
+	margin-bottom: 4rem;
+	display: flex;
+}
+
+.icon-container-react {
+	width: 10rem;
+	height: 10rem;
+	background: url('images/reactlogo.png') center;
+	background-size: contain;
+	margin-bottom: 4rem;
+	display: flex;
+}
+.icon-container-express {
+	width: 10rem;
+	height: 10rem;
+	background: url('images/expressjs.png') center;
+	background-size: contain;
+	margin-bottom: 4rem;
+	display: flex;
+}
+.icon-container-node {
+	width: 10rem;
+	height: 10rem;
+	background: url('images/nodelogo.png') center;
+	background-size: contain;
+	margin-bottom: 4rem;
+	display: flex;
+}
+.icon-container-postgresql {
+	width: 10rem;
+	height: 10rem;
+	background: url('images/postgreSQLlogo.png') center;
+	background-size: contain;
+	margin-bottom: 4rem;
+	display: flex;
+}
+
+.icon-container-git {
+	width: 10rem;
+	height: 10rem;
+	background: url('images/gitlogo.png') center;
 	background-size: contain;
 	margin-bottom: 4rem;
 	display: flex;
