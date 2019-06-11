@@ -1,7 +1,12 @@
 /*Start Global*/
 @font-face {
-  font-family: Furgatorio;
-  src: url('fonts/Furgatorio.ttf');
+  font-family: Cloud;
+  src: url('fonts/Cloud.otf');
+}
+
+@font-face {
+  font-family: Blowbrush;
+  src: url('fonts/Blowbrush.ttf');
 }
 
 * {
@@ -13,7 +18,7 @@
 
 html {
 	font-size: 10px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Cloud', sans-serif;
 	color: #eee;
 }
 
@@ -130,7 +135,7 @@ li {
 }
 
 .nav-link {
-	font-family: 'Furgatorio', sans-serif;
+	font-family: 'Blowbrush', sans-serif;
 	font-size: 5rem;
 	padding: 1rem;
 }
@@ -208,18 +213,19 @@ li {
 }
 
 .landing-text h1 {
-	font-size: 20rem;
-	font-family: 'Furgatorio', sans-serif;
+	font-size: 15rem;
+	font-family: 'Blowbrush', sans-serif;
 	background: linear-gradient(to top, #ffe838 , #fd57bf);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	padding: 1rem;
 	user-select: none;
+	font-weight: 100;
 
 }
 
 .landing-text h6 {
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: 300;
 }
 /*End Header*/
@@ -304,10 +310,26 @@ li {
 	width: 10rem;
 	height: 10rem;
 	border: 3px solid #ffe838;
-	background-color: #fd57bf;
+	background-color: #221e3f;
 	margin-bottom: 4rem;
 	display: flex;
 	transform: rotate(45deg);
+}
+
+.grow {
+	transition: all .4s ease-in-out;
+}
+.skill .grow:hover {
+	transform:scale(1.3);
+}
+
+.icon-container-js {
+	width: 10rem;
+	height: 10rem;
+	background: url('images/jslogo.png') center;
+	background-size: contain;
+	margin-bottom: 4rem;
+	display: flex;
 }
 
 .icon-container i {
